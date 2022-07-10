@@ -1,105 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
 :root {
-    --primary-blue: hsl(215, 51%, 70%);
-    --primary-cyan: hsl(178, 100%, 50%);
-    --neutral-blue-main: hsl(217, 54%, 11%);
-    --neutral-blue-card: hsl(216, 50%, 16%);
-    --neutral-blue-line: hsl(215, 32%, 27%);
-    --neutral-white: hsl(0, 0%, 100%);
+  --primary-blue: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+  --neutral-blue-main: hsl(217, 54%, 11%);
+  --neutral-blue-card: hsl(216, 50%, 16%);
+  --neutral-blue-line: hsl(215, 32%, 27%);
+  --neutral-white: hsl(0, 0%, 100%);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
-    background-color: var(--neutral-blue-main);
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--neutral-blue-main);
 }
 
 p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 main {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
-    background-color: var(--neutral-blue-card);
-    padding: 20px;
-    width: 100%;
-    max-width: 375px;
-    border-radius: 16px;
-    color: var(--neutral-white);
+  background-color: var(--neutral-blue-card);
+  padding: 20px;
+  width: 100%;
+  max-width: 375px;
+  border-radius: 16px;
+  color: var(--neutral-white);
 }
 
 .container__image {
-    width: 100%;
+  width: 100%;
 }
 
 .container__heading {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .container__text {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 .etherium__left,
 .etherium__right {
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
 }
 
 .etherium__image {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .container__bottom,
 .info__container {
-    display: flex;
+  display: flex;
 }
 
 .info__container {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .container__bottom {
-    align-items: center;
-    color: var(--primary-blue);
+  align-items: center;
+  color: var(--primary-blue);
 }
 
 .bottom__image {
-    width: 40px;
+  width: 40px;
 }
 
 .bottom__user {
-    color: var(--neutral-white);
+  color: var(--neutral-white);
 }
 
 .bottom__image {
-    margin-right: 10px;
+  margin-right: 10px;
+}
+
+.etherium__value {
+  color: var(--primary-cyan);
+}
+
+.etherium__text {
+  color: var(--primary-blue);
 }
 
 .divider {
-    color: var(--neutral-blue-line);
-    margin-bottom: 20px;
+  height: 1px;
+  border: none;
+  background-color: var(--neutral-blue-line);
+  margin-bottom: 20px;
 }
 
 .attribution {
-    text-align: center;
-    margin-top: 30px;
-    color: var(--neutral-white);
+  text-align: center;
+  margin-top: 30px;
+  color: var(--neutral-white);
+}
+
+.link,
+.container__text {
+  color: var(--primary-blue);
+}
+
+.link:visited {
+  color: var(--primary-cyan);
 }
